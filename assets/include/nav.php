@@ -3,7 +3,7 @@ $currentURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 ?>
 
 <a class="pa-mobile-main-logo" href="index.php"><img src="<?php if($_SESSION['lan'] == 'EN') echo 'assets/images/Logo.png'; else echo 'assets/images/cn-logo.png'?>"
-                                             style="max-height: 65px;max-width: 100%;padding-left: 18px;"
+                                             style="max-height: 45px;max-width: 100%;padding-left: 18px;padding-top: 10px"
                                              alt=""/></a>
 
 

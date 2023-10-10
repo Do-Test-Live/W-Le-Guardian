@@ -1,0 +1,92 @@
+.lg-slider{
+    background: url("../images/home/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 99vh;
+    width: 100%;
+}
+
+.lg-slide-logo,.lg-slide-logo-2{
+    max-width: 350px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: stop-gif 2s steps(1, end) forwards;
+    z-index: 7;
+}
+
+@keyframes stop-gif {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.lg-slide-logo-2{
+    max-width: 230px;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-img 2s steps(1, end) forwards;
+    z-index: 8;
+}
+
+@keyframes show-img {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.lg-slider-content{
+    padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+    position: absolute;
+    bottom: 0;
+    background: rgba(29, 52, 87, 0.8);
+
+    opacity: 0; /* Initially, set the opacity to 0 to make it invisible */
+    transform: translateY(20px); /* Initial position, slightly below */
+    animation: fade-in-from-bottom 4s ease forwards; /* Animation definition */
+
+}
+
+.lg-slider-content h3{
+    font-family: "Times New Roman";
+    color: white;
+    text-align: justify;
+}
+
+@keyframes fade-in-from-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start from slightly below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Move to its original position (no translation) */
+    }
+}
+
+
+@media only screen and (max-width: 550px) {
+    .lg-slider{
+        background-position: right;
+    }
+
+    .lg-slider-content {
+        padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    }
+
+    .lg-slider-content h3{
+        font-size: 12px;
+    }
+
+}
+
+
