@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Garamond-Bold';
+    src: url("../fonts/Garamond-Bold.otf");
+}
+
+.lg-bg-blue {
+    background: #13324f;
+    padding: 1rem 0 !important;
+}
+
+.lg-bg-gradient {
+    background-image: linear-gradient(to bottom, #173958, #244d73);
+}
+
+.lg-bg-blue h1{
+    font-family: 'Garamond-Bold',sans-serif;
+    font-size: 57px;
+}
+
+.lg-content-bg{
+    background-image: url("../images/custom/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    font-family: "Times New Roman",sans-serif;
+    font-size: 20px;
+    margin-bottom: 2rem;
+    color: #13324f;
+    letter-spacing: 1px;
+}
+
+ul{
+    margin-bottom: 2rem;
+}
+
+ul li{
+    list-style-type: none;
+    font-family: 'Garamond-Bold',sans-serif;
+    font-size: 20px;
+    color: #214161;
+    line-height: 2;
+}
+
+ul li i{
+    margin-right: 10px;
+}
+
+.col-lg-4{
+    padding-left: unset;
+    padding-right: unset;
+}
+
+.eam{
+    background-image: url("../images/eam/1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 80px 80px;
+}
+
+.eam h1, p {
+    color: #fff;
+}
+
+.card{
+    padding: 50px;
+    min-height: 620px;
+}
+
+.card h1{
+    color: #fff;
+}
+
+.card p{
+    font-size: 20px;
+}
+
+#card-1{
+    background-image: url("../images/eam/4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#card-2{
+    background-image: url("../images/eam/5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#card-3{
+    background-image: url("../images/eam/6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#investment{
+    background-image: url('../images/investment/1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 80px;
+}
+
+#investment p{
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+#investment .card{
+    background-image: url('../images/investment/2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 370px;
+}
+
+#investment .card p{
+    color: #ffffff;
+}
+
+.image-icon{
+    width: 150px;
+}
+.centered-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 250px; /* Set the maximum width to ensure it doesn't exceed the container */
+    max-height: 250px; /* Set the maximum height to ensure it doesn't exceed the container */
+    z-index: 999;
+}
+
+.overlay{
+    bottom: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.42);
+    width: 100%;
+}
+
+#wealth{
+    background-image: url('../images/wealth/3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 80px;
+}
+
+#wealth p{
+    color: #13324f;
+}
+.home-background{
+    min-height: 100vh !important;
+}
+@media only screen and (max-width: 550px) {
+    h1{
+        font-size: 1.8rem;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    ul li{
+        font-size: 16px;
+    }
+    .lg-bg-blue h1{
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .card{
+        min-height: 100%;
+    }
+    #investment .card{
+        min-height: 100%;
+    }
+    .eam{
+        padding: 80px 40px;
+    }
+    .card p{
+        font-size: 16px;
+    }
+    .image-icon{
+        width: 100px;
+    }
+    #investment{
+        padding: 80px 40px;
+    }
+    #investment p{
+        font-size: 16px;
+    }
+    #wealth{
+        padding: 80px 0;
+    }
+    .centered-image {
+        top: 35%;
+    }
+    .home-background{
+        min-height: 120vh !important;
+    }
+}
