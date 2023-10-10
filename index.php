@@ -15,6 +15,11 @@ if (!isset($_SESSION['lan'])) {
         ul li{
             line-height: 1;
         }
+
+        canvas, img, svg, video{
+            max-width: unset;
+            width: 100%;
+        }
     </style>
 </head>
 
