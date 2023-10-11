@@ -2,7 +2,7 @@
 $currentURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 ?>
 
-<a class="pa-mobile-main-logo" href="index.php"><img src="<?php if($_SESSION['lan'] == 'EN') echo 'assets/images/Logo.png'; else echo 'assets/images/cn-logo.png'?>"
+<a class="pa-mobile-main-logo" href="index.php"><img src="<?php if($_SESSION['lan'] == 'EN') echo 'assets/images/en-logo.png'; else echo 'assets/images/cn-logo.png'?>"
                                              style="max-height: 45px;max-width: 100%;padding-left: 18px;padding-top: 10px"
                                              alt=""/></a>
 
@@ -10,7 +10,7 @@ $currentURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 <nav id="main-nav" class="pa-menu navbar pa-navbar navbar-expand-lg navbar-dark lg-bg-blue static-top">
 
     <!-- Desktop Menu Logo -->
-    <a class="navbar-brand" href="index.php"><img src="<?php if($_SESSION['lan'] == 'EN') echo 'assets/images/Logo.png'; else echo 'assets/images/cn-logo.png'?>"
+    <a class="navbar-brand" href="index.php"><img src="<?php if($_SESSION['lan'] == 'EN') echo 'assets/images/en-logo.png'; else echo 'assets/images/cn-logo.png'?>"
                                                    style="width:unset;height: 65px;max-width: 100%;padding-left: 18px;"
                                                    alt=""></a>
 
@@ -19,7 +19,7 @@ $currentURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
         <!-- Mobile Menu Logo (only use if "close" buttons are set to false in JS) -->
         <li data-nav-custom-content class="custom-content pa-mobile-menu-logo">
-            <a class="pa-mobile-navbar-brand" href="index.php"><img src="<?php if($_SESSION['lan'] == 'EN') echo 'assets/images/Logo.png'; else echo 'assets/images/cn-logo.png'?>"
+            <a class="pa-mobile-navbar-brand" href="index.php"><img src="<?php if($_SESSION['lan'] == 'EN') echo 'assets/images/en-logo.png'; else echo 'assets/images/cn-logo.png'?>"
                                                                      style="height: 50px;" alt=""/></a>
         </li>
 

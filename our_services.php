@@ -66,7 +66,18 @@ if(!isset($_SESSION['lan'])){
 
     <section style="background-image: url('assets/images/new/hero-bg.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
         <div class="container">
-            <img src="assets/images/new/hero.png" class="img-fluid mt-5 mb-5" alt=""/>
+            <?php
+            if($_SESSION['lan'] == 'CN')  {
+                ?>
+            <img src="assets/images/new/hero-cn.png" class="img-fluid mt-5 mb-5" alt=""/>
+            <?php
+            }
+            else {
+                ?>
+                <img src="assets/images/new/hero-en.png" class="img-fluid mt-5 mb-5" alt=""/>
+            <?php
+            }?>
+
         </div>
     </section>
 
@@ -83,7 +94,7 @@ if(!isset($_SESSION['lan'])){
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="assets/images/new/14a.jpg" alt="" style="height: 100%; object-fit: cover;"/>
+                    <img src="assets/images/new/14a.png" alt="" style="height: 100%; object-fit: cover;object-position: 44%;"/>
                 </div>
                 <div class="col-lg-8 d-flex justify-content-center align-items-center">
                     <div class="p-lg-5 p-3">
