@@ -41,11 +41,19 @@ $currentURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         </li>
 
         <li class="nav-item">
-            <a class="nav-link hvr-underline-from-center" href="wealth.php"><?php if($_SESSION['lan'] == 'EN') echo 'Inheritance Planning'; else echo '財務規劃'?></a>
+            <a class="nav-link hvr-underline-from-center" href="wealth.php"><?php if($_SESSION['lan'] == 'EN') echo 'Family Inheritance Planning'; else echo '家族傳承規劃'?></a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link hvr-underline-from-center" href="legal-affairs.php"><?php if($_SESSION['lan'] == 'EN') echo 'Family Legal Affairs'; else echo '家族法律事務'?></a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link hvr-underline-from-center" href="#"><?php if($_SESSION['lan'] == 'EN') echo 'Global Tax Planning'; else echo '環球稅務規劃'?></a>
         </li>
 
         <li class="nav-item menu-item-has-children">
-            <a class="nav-link hvr-underline-from-center" href="#"><?php if($_SESSION['lan'] == 'EN') echo 'Trust'; else echo '信託'?></a>
+            <a class="nav-link hvr-underline-from-center" href="#"><?php if($_SESSION['lan'] == 'EN') echo 'Trust'; else echo '信托服務'?></a>
             <ul class="pa-submenu-ul">
                 <li class="nav-item"><a class="nav-link active"
                                         href="https://fgatrust.ngt.hk/about-us/index.html"><?php if($_SESSION['lan'] == 'EN') echo 'About Us'; else echo '關於我們'?></a></li>
@@ -71,10 +79,10 @@ $currentURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         </li>
 
         <li class="nav-item">
-            <a class="nav-link hvr-underline-from-center" href="#"><?php if($_SESSION['lan'] == 'EN') echo 'Contact Us'; else echo '聯絡我們'?></a>
+            <a class="nav-link hvr-underline-from-center" href="#"><?php if($_SESSION['lan'] == 'EN') echo 'Contact us'; else echo '聯絡我們'?></a>
         </li>
         <li class="nav-item menu-item-has-children">
-            <a class="nav-link hvr-underline-from-center" href="#">Language</a>
+            <a class="nav-link hvr-underline-from-center" href="#"><?php if($_SESSION['lan'] == 'EN') echo 'Language'; else echo '語言'?></a>
             <ul class="pa-submenu-ul">
                 <li class="nav-item"><a class="nav-link active" href="assets/include/lan.php?lan=EN&url=<?php echo $currentURL;?>">English</a></li>
                 <li class="nav-item"><a class="nav-link active" href="assets/include/lan.php?lan=CN&url=<?php echo $currentURL;?>">Chinese</a></li>
