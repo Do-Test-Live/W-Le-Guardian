@@ -31,7 +31,7 @@ if(!isset($_SESSION['lan'])){
 <div class="pushable-content">
     <!-- Hero Section
     ================================================== -->
-    <div class="d-lg-block d-none" style="height: 80px">
+    <div class="d-lg-block d-none" style="height: 100px">
 
     </div>
 
