@@ -42,7 +42,7 @@ if(!isset($_SESSION['lan'])){
         <div class="container pa-supercontainer text-left">
             <div class="row pa-hero-typed-text">
                 <div class="col-12 fadeInDelay03Duration10 text-center">
-                    <h1 style="color: #b49e71;font-family: 'Blinker', sans-serif;font-size: 4rem;font-weight: bolder; margin-top: 20px;">
+                    <h1 class="lg-header">
                         Le
                         Guardien</h1>
                 </div>
