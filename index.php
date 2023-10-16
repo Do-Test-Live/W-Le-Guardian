@@ -34,7 +34,6 @@ if (!isset($_SESSION['lan'])) {
 
 <section class="lg-slider">
     <img src="assets/images/home/logo-g.gif" class="img-fluid lg-slide-logo" alt=""/>
-    <img src="assets/images/home/logo.png" class="img-fluid lg-slide-logo-2" alt=""/>
 
 
     <div class="lg-slider-content">

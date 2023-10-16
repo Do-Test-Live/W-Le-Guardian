@@ -106,10 +106,22 @@ if (!isset($_SESSION['lan'])) {
             </h1>
         </div>
     </section>
+    <div style="background: #fff;">
+        <?php if ($_SESSION['lan'] == 'EN') {
+            ?>
+            <img src="assets/images/eam/eam-en.png" class="img-fluid mt-5"/>
+            <?php
+        } else {
+            ?>
+            <img src="assets/images/eam/bottomm.png" class="img-fluid mt-5"/>
+            <?php
+        }
+        ?>
+    </div>
 
     <section class="card-section"
              style="background-image: url('assets/images/new/hero-bg.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-        <div class="pt-5 pb-5">
+        <div class="pt-3 pb-5">
             <div class="row text-center">
                 <div class="col-lg-4 col-sm-12">
                     <div class="card" id="card-1">
@@ -126,7 +138,8 @@ if (!isset($_SESSION['lan'])) {
                             <?php
                         } else {
                             ?>
-                            <p>嘉兆家族辦公室的EAM 以客戶的需求和利益為核心，不受限於任何金融機構，也不受產品銷售或交易佣金的驅動。採用中立客觀的立場，EAM有效整合不同金融機構的產品和服務優勢，提供最適合客戶的解決方案。
+                            <p>嘉兆家族辦公室的EAM
+                                以客戶的需求和利益為核心，不受限於任何金融機構，也不受產品銷售或交易佣金的驅動。採用中立客觀的立場，EAM有效整合不同金融機構的產品和服務優勢，提供最適合客戶的解決方案。
                             </p>
                             <?php
                         }
@@ -139,7 +152,9 @@ if (!isset($_SESSION['lan'])) {
                         <h1><?php if ($_SESSION['lan'] == 'EN') echo 'Funds Security'; else echo '資金安全'; ?></h1>
                         <?php if ($_SESSION['lan'] == 'EN') {
                             ?>
-                            <p>EAM operates within a regulatory framework and does not hold any client assets. Client assets are always held in private bank accounts chosen independently by the clients, ensuring the security of funds.
+                            <p>EAM operates within a regulatory framework and does not hold any client assets. Client
+                                assets are always held in private bank accounts chosen independently by the clients,
+                                ensuring the security of funds.
                             </p>
                             <?php
                         } else {
@@ -156,12 +171,17 @@ if (!isset($_SESSION['lan'])) {
                         <h1><?php if ($_SESSION['lan'] == 'EN') echo 'Efficient Communication and Cost Savings'; else echo '高效溝通和節省成本'; ?></h1>
                         <?php if ($_SESSION['lan'] == 'EN') {
                             ?>
-                            <p>EAM encompasses multiple financial institutions concurrently, enabling comprehensive information assimilation and industry expertise. This notably streamlines clients’ time and effort compared to the conventional private banking approach, where individual communication and evaluation with each bank are required. Moreover, EAM possesses enhanced negotiation capabilities, reducing external costs for clients.
+                            <p>EAM encompasses multiple financial institutions concurrently, enabling comprehensive
+                                information assimilation and industry expertise. This notably streamlines clients’ time
+                                and effort compared to the conventional private banking approach, where individual
+                                communication and evaluation with each bank are required. Moreover, EAM possesses
+                                enhanced negotiation capabilities, reducing external costs for clients.
                             </p>
                             <?php
                         } else {
                             ?>
-                            <p>EAM 可以同時涵蓋多家金融機構，實現全面的資訊匯集和行業專業知識。相較於傳統的私人銀行方式，客戶不再需要與每家銀行進行個別溝通和評估，明顯能夠節省時間和精力。此外，EAM 一般與多家金融機構已簽署合作協議，具備協商能力，可減少客戶的外部成本。
+                            <p>EAM 可以同時涵蓋多家金融機構，實現全面的資訊匯集和行業專業知識。相較於傳統的私人銀行方式，客戶不再需要與每家銀行進行個別溝通和評估，明顯能夠節省時間和精力。此外，EAM
+                                一般與多家金融機構已簽署合作協議，具備協商能力，可減少客戶的外部成本。
                             </p>
                             <?php
                         }
@@ -171,15 +191,6 @@ if (!isset($_SESSION['lan'])) {
             </div>
         </div>
     </section>
-
-    <div class="container-fluid p-0 m-0">
-        <div class="row" style="margin:0;">
-            <div class="col-12">
-                <img src="assets/images/eam/bottomm.png" class="img-fluid"/>
-            </div>
-        </div>
-    </div>
-
 
     <!-- Contact Us Section
     ================================================== -->

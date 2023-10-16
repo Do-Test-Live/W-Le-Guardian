@@ -69,7 +69,7 @@ if (!isset($_SESSION['lan'])) {
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="assets/images/new/14a.png" alt=""
+                    <img src="assets/images/new/top-imahe.png" alt=""
                          style="height: 100%; object-fit: cover;object-position: 44%;"/>
                 </div>
                 <div class="col-lg-8 d-flex justify-content-center align-items-center">
@@ -106,10 +106,7 @@ if (!isset($_SESSION['lan'])) {
     <section class="lg-content-bg">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4">
-                    <img src="assets/images/new/la1.png" alt="" style="height: 100%; object-fit: cover;"/>
-                </div>
-                <div class="col-lg-8 d-flex justify-content-center align-items-center">
+                <div class="col-lg-8 d-flex justify-content-center align-items-center order-1 order-lg-0">
                     <div class="p-lg-5 p-3">
                         <p>
                             <?php
@@ -126,6 +123,9 @@ if (!isset($_SESSION['lan'])) {
                     </div>
 
                 </div>
+                <div class="col-lg-4 order-0 order-lg-1">
+                    <img src="assets/images/new/la3.png" alt="" style="height: 100%; object-fit: cover;"/>
+                </div>
             </div>
         </div>
     </section>
@@ -141,7 +141,10 @@ if (!isset($_SESSION['lan'])) {
     <section class="lg-content-bg">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-8 d-flex justify-content-center align-items-center order-1 order-lg-0">
+                <div class="col-lg-4">
+                    <img src="assets/images/new/la1.png" alt="" style="height: 100%; object-fit: cover;"/>
+                </div>
+                <div class="col-lg-8 d-flex justify-content-center align-items-center">
                     <div class="p-lg-5 p-3">
                         <p><?php if ($_SESSION['lan'] == 'CN')
                                 echo '預設醫療指示是指不接受維生治療,令身體自然順著病情發展而死亡。<br/>
@@ -153,9 +156,6 @@ if (!isset($_SESSION['lan'])) {
                         </p>
                     </div>
 
-                </div>
-                <div class="col-lg-4 order-0 order-lg-1">
-                    <img src="assets/images/new/la2.png" alt="" style="height: 100%; object-fit: cover;"/>
                 </div>
             </div>
         </div>
@@ -173,10 +173,7 @@ if (!isset($_SESSION['lan'])) {
     <section class="lg-content-bg">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4">
-                    <img src="assets/images/new/la3.png" alt="" style="height: 100%; object-fit: cover;"/>
-                </div>
-                <div class="col-lg-8 d-flex justify-content-center align-items-center">
+                <div class="col-lg-8 d-flex justify-content-center align-items-center order-1 order-lg-0">
                     <div class="p-lg-5 p-3">
                         <p><?php if ($_SESSION['lan'] == 'CN') echo '一個人只要年滿18歲、精神健全、神智清醒、清楚自己的財務狀況、沒有受威脅或欺騙，能夠明白和同意遺囑的內容，就可以按照法律規定立遺囑<br/>
 遺囑是讓您在去世後決定如何處理你的金錢，財產和物業，因此，遺囑在傳承時才生效。<br/>
@@ -186,6 +183,9 @@ if (!isset($_SESSION['lan'])) {
                         </p>
                     </div>
 
+                </div>
+                <div class="col-lg-4 order-0 order-lg-1">
+                    <img src="assets/images/new/la2.png" alt="" style="height: 100%; object-fit: cover;"/>
                 </div>
             </div>
         </div>

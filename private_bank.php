@@ -71,6 +71,15 @@ if(!isset($_SESSION['lan'])){
                 <!-- Main Article Column
                 ================================================== -->
                 <div class="col-12 pa-single-article">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h1 class="text-dark mb-3">
+                                <?php
+                                if($_SESSION['lan'] == 'EN') echo "Banking Partners for External Asset Management"; else echo "外部資產管理的銀行合作夥伴";
+                                ?>
+                            </h1>
+                        </div>
+                    </div>
 
                     <article id="post-565" class="post type-post">
 

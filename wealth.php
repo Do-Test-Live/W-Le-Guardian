@@ -55,7 +55,7 @@ if(!isset($_SESSION['lan'])){
     <section class="lg-bg-blue">
         <div class="container-fluid">
             <h1 class="text-center text-white pt-3 pb-3">
-                <?php if($_SESSION['lan'] == 'EN') echo 'Wealth Succession Planning'; else echo '財富傳承規劃';?>
+                <?php if($_SESSION['lan'] == 'EN') echo 'Family Inheritance Planning'; else echo '財富傳承規劃';?>
             </h1>
         </div>
     </section>
@@ -63,7 +63,7 @@ if(!isset($_SESSION['lan'])){
     <section id="wealth" class="lg-content-bg">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-10 d-flex justify-content-center align-items-center order-1 order-lg-0" style="background-image: url('assets/images/wealth/1.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                <div class="col-lg-8 d-flex justify-content-center align-items-center order-1 order-lg-0" style="background-image: url('assets/images/wealth/1.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
                     <div class="p-lg-5 p-3">
                         <?php
                         if($_SESSION['lan'] == 'CN'){
@@ -93,8 +93,8 @@ if(!isset($_SESSION['lan'])){
                     </div>
 
                 </div>
-                <div class="col-lg-2  order-0 order-lg-1 p-0">
-                    <img src="assets/images/wealth/2.png" alt="" style="height: 100%; object-fit: cover;"/>
+                <div class="col-lg-4  order-0 order-lg-1 p-0">
+                    <img src="assets/images/new/5.png" alt="" style="height: 100%; object-fit: cover;"/>
                 </div>
             </div>
         </div>
