@@ -43,8 +43,18 @@ if(!isset($_SESSION['lan'])){
             <div class="row pa-hero-typed-text">
                 <div class="col-12 fadeInDelay03Duration10 text-center">
                     <h1 class="lg-header">
-                        Le
-                        Guardien</h1>
+                        <?php
+                        if($_SESSION['lan'] == 'CN')  {
+                            ?>
+                            嘉兆家族辦公室
+                            <?php
+                        }
+                        else {
+                            ?>
+                            Le Guardien
+                            <?php
+                        }?>
+                    </h1>
                 </div>
             </div>
         </div>
