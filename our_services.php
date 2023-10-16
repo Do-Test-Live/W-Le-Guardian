@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!isset($_SESSION['lan'])){
+if (!isset($_SESSION['lan'])) {
     $_SESSION['lan'] = 'CN';
 }
 ?>
@@ -9,9 +9,9 @@ if(!isset($_SESSION['lan'])){
 
 <head>
     <title>Le Guardien Family Office</title>
-    <?php include ('assets/include/css.php');?>
+    <?php include('assets/include/css.php'); ?>
     <style>
-        p{
+        p {
             color: #13324f;
         }
     </style>
@@ -26,7 +26,7 @@ if(!isset($_SESSION['lan'])){
 <!-- Navigation Menu
 ================================================== -->
 
-<?php include ('assets/include/nav.php');?>
+<?php include('assets/include/nav.php'); ?>
 <!-- /.pa-menu -->
 
 
@@ -49,16 +49,15 @@ if(!isset($_SESSION['lan'])){
                 <div class="col-12 fadeInDelay03Duration10 text-center">
                     <h1 class="lg-header">
                         <?php
-                        if($_SESSION['lan'] == 'CN')  {
+                        if ($_SESSION['lan'] == 'CN') {
                             ?>
                             嘉兆家族辦公室
                             <?php
-                        }
-                        else {
+                        } else {
                             ?>
                             Le Guardien
                             <?php
-                        }?>
+                        } ?>
                     </h1>
                 </div>
             </div>
@@ -69,25 +68,25 @@ if(!isset($_SESSION['lan'])){
 
     <section class="lg-bg-blue">
         <div class="container-fluid">
-            <h1 class="text-center text-white pt-3 pb-3"><?php if($_SESSION['lan'] == 'CN') echo '我們的服務'; else echo 'Our Services '?>
+            <h1 class="text-center text-white pt-3 pb-3"><?php if ($_SESSION['lan'] == 'CN') echo '我們的服務'; else echo 'Our Services ' ?>
 
             </h1>
         </div>
     </section>
 
-    <section style="background-image: url('assets/images/new/hero-bg.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+    <section
+            style="background-image: url('assets/images/new/hero-bg.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
         <div class="container">
             <?php
-            if($_SESSION['lan'] == 'CN')  {
+            if ($_SESSION['lan'] == 'CN') {
                 ?>
-            <img src="assets/images/new/hero-cn.png" class="img-fluid mt-5 mb-5" alt=""/>
-            <?php
-            }
-            else {
+                <img src="assets/images/new/hero-cn.png" class="img-fluid mt-5 mb-5" alt=""/>
+                <?php
+            } else {
                 ?>
                 <img src="assets/images/new/hero-en.png" class="img-fluid mt-5 mb-5" alt=""/>
-            <?php
-            }?>
+                <?php
+            } ?>
 
         </div>
     </section>
@@ -95,7 +94,8 @@ if(!isset($_SESSION['lan'])){
 
     <section class="lg-bg-blue">
         <div class="container-fluid">
-            <h1 class="text-lg-right  text-center text-white pt-3 pb-3 pr-lg-5"><?php if($_SESSION['lan'] == 'CN') echo '家庭資產管理'; else echo '  Family Asset Management '?>
+            <h1 class="text-lg-right  text-center text-white pt-3 pb-3 pr-lg-5">
+                <?php if ($_SESSION['lan'] == 'CN') echo '家族資產管理'; else echo 'Family Asset Management' ?>
 
             </h1>
         </div>
@@ -105,66 +105,95 @@ if(!isset($_SESSION['lan'])){
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="assets/images/new/14a.png" alt="" style="height: 100%; object-fit: cover;object-position: 44%;"/>
+                    <img src="assets/images/new/14a.png" alt=""
+                         style="height: 100%; object-fit: cover;object-position: 44%;"/>
                 </div>
                 <div class="col-lg-8 d-flex justify-content-center align-items-center">
                     <div class="p-lg-5 p-3">
-                        <p><?php if($_SESSION['lan'] == 'CN') echo 'Le Guardien Family Office 選擇香港作為資產管理總部，整合高品質的國際資源，為中國的高淨值家庭提供最佳的資產管理服務，以實現家族財富的保值和增值。它確實非常值得信賴。以中國的高淨值人口為服務對象，香港為...（未完整，請提供更多上下文以完成翻譯。）'; else echo '   Le Guardien Family Office selects Hong Kong as the asset management headquarters,
-                            integrating
-                            high-quality international resources, and provide the best asset management services for
-                            China\'s
-                            high-net-worth families, so as to actualize the preservation and value enhancement of family
-                            wealth.
-                            It is really very trustworthy. Taking China\'s high net-worth population as the serving
-                            clients,
-                            Hong '?>
-
-                        </p>
-                        <p><?php if($_SESSION['lan'] == 'CN') echo '香港具有以下綜合優勢：'; else echo '   Kong have the following integrative advantages: '?>
+                        <p>
+                            <?php
+                            if ($_SESSION['lan'] == 'CN')
+                                echo '嘉兆家族辦公室整合優質的國際化資源，為中國高淨值家庭提供最佳的資產管理服務， 
+                            實現家族財富的保值增值，值得信賴。面對中國高淨值人群，香港的綜合優勢：';
+                            else
+                                echo 'Le Guardien Family Office provides the best asset
+                                 management services for China\'s high-net-worth families, so 
+                                as to actualize the preservation and value enhancement of family wealth. It is really very trustworthy. 
+                                Taking China\'s high net-worth population as the serving clients, 
+                                Hong Kong have the following integrative advantages: ';
+                            ?>
 
                         </p>
                         <ul>
                             <li>
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i><?php if($_SESSION['lan'] == 'CN') echo '高度的貨幣穩定性'; else echo 'High currency stability '?>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                <?php
+                                if ($_SESSION['lan'] == 'CN')
+                                    echo '貨幣穩定';
+                                else
+                                    echo 'High currency stability';
+                                ?>
                             </li>
                             <li>
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i><?php if($_SESSION['lan'] == 'CN') echo '離岸金融使其成為全球最大的私人財富中心'; else echo 'Offshore finance make it becomes
-                                the world\'s largest private wealth center '?>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                <?php
+                                if ($_SESSION['lan'] == 'CN')
+                                    echo '離岸金融，成為世界最大私人財富中心';
+                                else
+                                    echo 'Offshore finance make it becomes the world\'s largest private wealth center';
+                                ?>
                             </li>
                             <li>
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i><?php if($_SESSION['lan'] == 'CN') echo '嚴格的法規和監管環境'; else echo 'Strict regulations and regulatory
-                                environment '?>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                <?php
+                                if ($_SESSION['lan'] == 'CN')
+                                    echo '嚴格的法規、監管環境';
+                                else
+                                    echo 'Strict regulations and regulatory environment';
+                                ?>
                             </li>
                             <li>
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i><?php if($_SESSION['lan'] == 'CN') echo '不受外匯管理約束，資金自由流通'; else echo 'Not subject to foreign exchange
-                                management and free circulation of funds '?>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                <?php
+                                if ($_SESSION['lan'] == 'CN')
+                                    echo '不受外匯管理，資金自由流通';
+                                else
+                                    echo 'Not subject to foreign exchange management and free circulation of funds';
+                                ?>
                             </li>
                             <li>
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i><?php if($_SESSION['lan'] == 'CN') echo '合理的稅務規劃，世界發達地區中稅率最低之一'; else echo 'Reasonable tax planning, one of
-                                lowest tax rate in the world developed region '?>
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                <?php
+                                if ($_SESSION['lan'] == 'CN')
+                                    echo '合理規劃稅務，全球稅率最低的發達國家之一';
+                                else
+                                    echo 'Reasonable tax planning, one of lowest tax rate in the world developed region';
+                                ?>
                             </li>
                         </ul>
-                        <p><?php if($_SESSION['lan'] == 'CN') echo '
-Le Guardien Family Office 提供獨立的資產管理模式，我們以完全授權的方式管理和監督您的資產。我們為家庭和企業度身訂製了關鍵的服務內容，以實現財富保值。同時，通過全球資產配置和綜合統一管理，降低風險並增強投資組合的投資回報。專業的特許金融分析師（CFA）和投資專家是私人家庭辦公室團隊的後盾，與投資策略師和研究分析師一起，提供專業和有效的支持。為了滿足客戶的適當風險承受能力和回報目標，我們量身定制了不同種類的資產委託組合，並盡力把握每個全球機會，以把握全球機遇的投資組合。'; else echo 'Le Guardien Family Office provides an independent asset management model, and we manage and
-                            supervise your assets in a fully authorize approach. We tailor-made key service content for
-                            families
-                            and enterprises, so as to achieve wealth preservation. At the same time, through global
-                            asset
-                            allocation and integrated unified management to reduce risks and enhance portfolio
-                            investment
-                            returns. Professional Chartered Financial Analysts (CFA) and investment experts are the
-                            back-up
-                            of
-                            the Private Family Office team, together with the investment strategists and research
-                            analysts,
-                            to
-                            provide professional and effective support. In order to meet the appropriate risk tolerance
-                            and
-                            return targets of customers, we tailor-made different kind of asset commissioned
-                            combinations
-                            and
-                            try our best to grasp every global opportunities.portfolios to grasp global opportunities '?>
-
+                        <p>
+                            <?php
+                            if ($_SESSION['lan'] == 'CN')
+                                echo '嘉兆家族辦公室服務提供獨立資產管理模式，以全權委託方式由我們管理及監督您的資產;
+                                為家族及企業量身定制的重點服務內容，實現財富保全，同時通過全球資產配置和綜合統一
+                                管理來降低風險、提升組合投資收益。專業的特許金融分析師(CFA)及投資專家為私人家族辦公室服務團隊，
+                                連同投資策略師及研究分析師作團隊後盾，提供專業及有效支援。為迎客戶合適的風險承受能力及收益目標，
+                                量身定制不同的資產委託組合，掌握環球機遇。';
+                            else
+                                echo 'Le Guardien Family Office provides an independent asset 
+                                management model, and we manage and supervise your assets in 
+                                a fully authorize approach. We tailor-made key service content 
+                                for families and enterprises, so as to achieve wealth preservation. 
+                                At the same time, through global asset allocation and integrated 
+                                unified management to reduce risks and enhance portfolio 
+                                investment returns. Professional Chartered Financial Analysts 
+                                (CFA) and investment experts are the back-up of the Private Family 
+                                Office team, together with the investment strategists and research 
+                                analysts, to provide professional and effective support. In order to 
+                                meet the appropriate risk tolerance and return targets of customers, 
+                                we tailor-made different kind of asset commissioned combinations and 
+                                try our best to grasp every global opportunities.';
+                            ?>
                         </p>
                     </div>
 
@@ -175,7 +204,12 @@ Le Guardien Family Office 提供獨立的資產管理模式，我們以完全授
 
     <section class="lg-bg-blue">
         <div class="container-fluid">
-            <h1 class="text-lg-left  text-center text-white pt-3 pb-3 pl-lg-5"><?php if($_SESSION['lan'] == 'CN') echo '家族遺產規劃'; else echo ' Family Heritage Planning '?>
+            <h1 class="text-lg-left  text-center text-white pt-3 pb-3 pl-lg-5">
+                <?php
+                if ($_SESSION['lan'] == 'CN')
+                    echo '家族傳承規劃';
+                else
+                    echo 'Family Heritage Planning'; ?>
 
             </h1>
         </div>
@@ -186,22 +220,24 @@ Le Guardien Family Office 提供獨立的資產管理模式，我們以完全授
             <div class="row">
                 <div class="col-lg-8 d-flex justify-content-center align-items-center order-1 order-lg-0">
                     <div class="p-lg-5 p-3">
-                        <p><?php if($_SESSION['lan'] == 'CN') echo 'Le Guardien Family Office 服務提供家族遺產規劃，確保家族的價值觀、文化和智慧能夠得以保留和延續。我們合格的家族遺產規劃師為家庭提供各種建議，建立堅實和和諧的代際關係，制定持久的遺產計劃。'; else echo 'Le Guardien Family Office Service provides family inherit planning and ensure that family
-                            values, culture and wisdom can be preserved and extended. Our qualified family heritage
-                            planners provide various suggestions to families, establish a solid and harmonious
-                            inter-generational relationship, and formulate durable inheritance plans. '?>
-
-                        </p>
-                        <p><?php if($_SESSION['lan'] == 'CN') echo '我們致力於提供全方位的家族企業繼承服務。我們合格的家族遺產規劃師擁有全面的繼承規劃知識和專業技能。'; else echo ' We are committed to provide a full range of family business inheritance services. Our
-                            qualified family heritage planners have comprehensive inherit planning knowledge and
-                            expertise. '?>
-
-                        </p>
-                        <p><?php if($_SESSION['lan'] == 'CN') echo '
-他們接受定期的專業培訓，保持最高水平的能力和最高標準的誠信，並度身訂製出滿足客戶獨特需求的家族遺產計劃。'; else echo ' They receive regular professional training, maintain the highest level of competence and the
-                            highest standards of integrity, and tailor-made a family inherit plan that meets the unique
-                            needs of customers. '?>
-
+                        <p>
+                            <?php
+                            if ($_SESSION['lan'] == 'CN')
+                                echo '嘉兆家族辦公室服務為家族提供傳承規劃，確保家族價值、文化和智慧得以延展 。
+                                我們的合資格家族傳承規劃師為家族提供各種建議，建立穩固與和諧的跨世代關係，
+                                訂立持久的傳承計劃。我們致力提供一系列完備的家族業務傳承服務。
+                                我們的合資格家族傳承規劃師具備豐富的傳承規劃知識和專長。他們接受定期的專業培訓，
+                                維持最徍能力水準和最高的誠信標準，量身打造能滿足客戶獨特需要的家族傳承計劃。';
+                            else
+                                echo 'Le Guardien Family Office provides family Inheritance planning and ensure that family values, 
+                                culture and wisdom can be preserved and extended. Our qualified family Inheritance planners 
+                                provide various suggestions to families, establish a solid and harmonious inter-generational relationship, 
+                                and formulate durable inheritance plans. We are committed to provide a full range of family
+                                 business inheritance services. Our qualified family Inheritance planners have comprehensive inherit 
+                                 planning knowledge and expertise. They receive regular professional training, 
+                                 maintain the highest level of competence 
+                                    and the highest standards of integrity, and tailor-made a family 
+                                    Inheritance plan that meets the unique needs of customers. '; ?>
 
                         </p>
                     </div>
@@ -216,7 +252,12 @@ Le Guardien Family Office 提供獨立的資產管理模式，我們以完全授
 
     <section class="lg-bg-blue">
         <div class="container-fluid">
-            <h1 class="text-lg-right  text-center text-white pt-3 pb-3 pr-lg-5"><?php if($_SESSION['lan'] == 'CN') echo '家族財富管理'; else echo ' Family Wealth Management '?>
+            <h1 class="text-lg-right  text-center text-white pt-3 pb-3 pr-lg-5">
+                <?php
+                if ($_SESSION['lan'] == 'CN')
+                    echo '家族財富管理';
+                else
+                    echo 'Family Wealth Management' ?>
 
             </h1>
         </div>
@@ -230,16 +271,21 @@ Le Guardien Family Office 提供獨立的資產管理模式，我們以完全授
                 </div>
                 <div class="col-lg-8 d-flex justify-content-center align-items-center">
                     <div class="p-lg-5 p-3">
-                        <p><?php if($_SESSION['lan'] == 'CN') echo 'Le Guardien Family Office Service 提供有經驗的財務規劃師（CFPCM）來幫助您制定個人和家庭財務規劃，以獲得更大的財務保障。'; else echo '   Le Guardien Family Office Service provides you experienced financial planners (CFPCM) to
-                            help you formulating personal and family financial planning, so as to obtain greater
-                            financial protection. '?>
-
-                        </p>
-                        <p><?php if($_SESSION['lan'] == 'CN') echo '
-協助您評估您的情況，從財富結構到財務規劃，檢查您現有的計劃是否符合您的目標，提供一個包括財富結構、稅務和法律建議的完整解決方案。'; else echo ' Help you to assess your situation, from Wealth Structuring to Financial Planning, and check
-                            whether your existing plan meets your goals- provide a complete solution covering wealth
-                            structure, tax and legal advices.
-                            wealth structuring, tax and legal advice. '?>
+                        <p>
+                            <?php
+                            if ($_SESSION['lan'] == 'CN')
+                                echo '嘉兆家族辦公室服務擁有經驗豐富的財務策劃師 (CFPCM) 幫助您制定個人及家庭財務策劃，
+                                從而獲得更大的財務保障。幫助您評估您的情況，從財富結構 (Wealth Structuring) 
+                                到財務策劃 (Financial Planning)，並檢查您的現有計劃是否符合您的目標- 提供涵蓋財富結構，
+                                稅務和法律諮詢的完整解決方案。';
+                            else
+                                echo 'Le Guardien Family Office provides you experienced financial planners (CFPCM) 
+                                to help you formulating personal and family financial planning, so as to 
+                                obtain greater financial protection. Help you to assess your situation, 
+                                from Wealth Structuring to Financial Planning, and check whether your existing plan 
+                                meets your goals- provide a complete solution covering wealth structure, 
+                                tax and legal advices.';
+                            ?>
 
                         </p>
                     </div>
@@ -251,7 +297,13 @@ Le Guardien Family Office 提供獨立的資產管理模式，我們以完全授
 
     <section class="lg-bg-blue">
         <div class="container-fluid">
-            <h1 class="text-lg-left  text-center text-white pt-3 pb-3 pl-lg-5"><?php if($_SESSION['lan'] == 'CN') echo '家庭事務服務'; else echo ' Family Affairs Services '?>
+            <h1 class="text-lg-left  text-center text-white pt-3 pb-3 pl-lg-5">
+                <?php
+                if ($_SESSION['lan'] == 'CN')
+                    echo '家族事務服務';
+                else
+                    echo 'Family Affairs Services';
+                ?>
 
             </h1>
         </div>
@@ -262,21 +314,23 @@ Le Guardien Family Office 提供獨立的資產管理模式，我們以完全授
             <div class="row">
                 <div class="col-lg-8 d-flex justify-content-center align-items-center order-1 order-lg-0">
                     <div class="p-lg-5 p-3">
-                        <p><?php if($_SESSION['lan'] == 'CN') echo 'Le Guardien Family Office 將香港選為資產管理總部，整合高品質的國際資源，為中國的高淨值家庭提供最佳的資產管理服務，實現家族財富的保值和增值。面對中國的高淨值人口，香港具有許多綜合優勢：'; else echo 'Le Guardien Family Office chooses Hong Kong as the asset management headquarters,
-                            integrating high-quality international resources, and provides the best asset management
-                            services for China\'s high net-worth families, and actualize the preservation and value
-                            enhancement of the family\'s wealth. Facing China\'s high net-worth population, Hong Kong has
-                            a lot of integrated advantages: '?>
-
-                        </p>
-                        <p><?php if($_SESSION['lan'] == 'CN') echo '家庭和諧氛圍和共同的價值觀。'; else echo ' Family harmony atmosphere and common values '?>
-
-                        </p>
-                        <p><?php if($_SESSION['lan'] == 'CN') echo '家庭不僅繼承物質財富，還要繼承家庭的精神和和諧。為了成功保留財富，家庭必須在成員之間形成反映共同價值觀的社會契約，每一代後代都必須再次確認、承認並繼續採納這些價值觀。'; else echo 'The family not only inherits the material wealth, but also inherits the spirit and harmony
-                            of the family. In order to successfully retain wealth, a family must form a social contract
-                            between members reflecting common values, and each subsequent generation must reaffirm,
-                            recognize, and continue to adopt this value. '?>
-
+                        <p>
+                            <?php
+                            if ($_SESSION['lan'] == 'CN')
+                                echo '嘉兆家族辦公室服務甄選香港為資產管理總部，整合優質的國際化資源，
+                                        為中國高淨值家庭提供最佳的資產管理服務，實現家族財富的保值增值，
+                                        值得信賴。面對中國高淨值人群，香港的綜合優勢：<br/>
+                                        家族和睦氛圍及共同價值觀<br/>
+                                        家族不但傳承物質財富，更要傳承的是家族的精神及和睦氛圍。為了成功保有財富，
+                                        一個家族必須在成員之間形成社會契約反映共同的價值觀，且以後的每一代都要重申、
+                                        認可並繼續採納這個價值觀。';
+                            else
+                                echo 'The family not only inherits the material wealth, but 
+                                also inherits the spirit and harmony of the family. 
+                                In order to successfully retain wealth, a family must form a social 
+                                contract between members reflecting common values, and each subsequent 
+                                generation must reaffirm, recognize, and continue to adopt this value.';
+                            ?>
 
                         </p>
                     </div>
@@ -291,8 +345,13 @@ Le Guardien Family Office 提供獨立的資產管理模式，我們以完全授
 
     <section class="lg-bg-blue">
         <div class="container-fluid">
-            <h1 class="text-lg-right  text-center text-white pt-3 pb-3 pr-lg-5"><?php if($_SESSION['lan'] == 'CN') echo '
-家族遺產教育'; else echo ' Family Inheritance Education '?>
+            <h1 class="text-lg-right  text-center text-white pt-3 pb-3 pr-lg-5">
+                <?php
+                if ($_SESSION['lan'] == 'CN')
+                    echo '家族傳承教育';
+                else
+                    echo 'Family Inheritance Education';
+                ?>
 
             </h1>
         </div>
@@ -306,19 +365,23 @@ Le Guardien Family Office 提供獨立的資產管理模式，我們以完全授
                 </div>
                 <div class="col-lg-8 d-flex justify-content-center align-items-center">
                     <div class="p-lg-5 p-3">
-                        <p><?php if($_SESSION['lan'] == 'CN') echo '
-家族遺傳教育 - 一個針對超高淨值客戶代際傳承而特別定制的家族企業傳承培育計劃。'; else echo 'Family Inherited Education--a nurturing plan for inheriting the family business, that is
-                            specially tailored-made for the inter-generational inheritance of ultra-high-net-worth
-                            customers. '?>
-
-                        </p>
-                        <p><?php if($_SESSION['lan'] == 'CN') echo '通過在美國、歐洲和亞洲的研究機構和大學進行研究，以及訪問世界各地的許多家庭並進行交流，幫助代際間了解家庭和家族企業的運作方式，同時尊重兩代人的自由選擇，以適當的方式繼承家族財富。'; else echo '   Through studying in research institutes and universities in the United States, Europe, and
-                            Asia, and visiting and communicating with many families around the world, it helps
-                            inter-generation to understand how the family and the family business operate, while
-                            respecting the free choice of the two generations and inherit the family wealth in an
-                            appropriate way. '?>
-
-
+                        <p>
+                            <?php
+                            if ($_SESSION['lan'] == 'CN')
+                                echo '專門為超高淨值客戶的代際傳承而定制的繼承家族事業的培育計畫。通過在美國、
+                                歐洲、亞洲研究機構及高校的學習，走訪全球多個家族的溝通與交流，使得二代瞭解家族與家族企業如何運營，
+                                同時尊重二代的自由選擇權，用適當的方式進行家族財富的傳承。';
+                            else
+                                echo 'Family Inherited Education--a nurturing plan for 
+                                inheriting the family business, that is specially tailored-made 
+                                for the inter-generational inheritance of ultra-high-net-worth 
+                                customers. Through studying in research institutes and 
+                                universities in the United States, Europe, and Asia, and 
+                                visiting and communicating with many families around the world, 
+                                it helps inter-generation to understand how the family and 
+                                the family business operate, while respecting the free choice of 
+                                the two generations and inherit the family wealth in an appropriate way.';
+                            ?>
                         </p>
                     </div>
 
@@ -329,7 +392,13 @@ Le Guardien Family Office 提供獨立的資產管理模式，我們以完全授
 
     <section class="lg-bg-blue">
         <div class="container-fluid">
-            <h1 class="text-lg-left  text-center text-white pt-3 pb-3 pl-lg-5"><?php if($_SESSION['lan'] == 'CN') echo '頂尖高等教育'; else echo 'Top Higher Education '?>
+            <h1 class="text-lg-left  text-center text-white pt-3 pb-3 pl-lg-5">
+                <?php
+                if ($_SESSION['lan'] == 'CN')
+                    echo '頂級高等教育';
+                else
+                    echo 'Top higher education';
+                ?>
 
             </h1>
         </div>
@@ -340,16 +409,21 @@ Le Guardien Family Office 提供獨立的資產管理模式，我們以完全授
             <div class="row">
                 <div class="col-lg-8 d-flex justify-content-center align-items-center order-1 order-lg-0">
                     <div class="p-lg-5 p-3">
-                        <p><?php if($_SESSION['lan'] == 'CN') echo '如果家庭成員打算進入哈佛、耶魯、斯坦福等常春藤聯盟大學，長期規劃是必要的，最好在早期建立良好的互動關係，與教授們建立良性互動關係。'; else echo ' It takes long-term planning and it is better to establish a benign interactive relationship
-                            with professors in an early stage if family members intend to enter Ivy League colleges such
-                            as Harvard, Yale, Stanford etc. '?>
-
-                        </p>
-                        <p><?php if($_SESSION['lan'] == 'CN') echo '
-在高等教育的選擇上，家庭成員應盡早意識到自己的才能和優勢，並選擇適合自己的學術環境和文化氛圍。'; else echo 'In the choice of higher education, family members should aware of their own talents and
-                            advantages as early as possible and choose a suitable academic environment and cultural
-                            atmosphere. '?>
-
+                        <p>
+                            <?php
+                            if ($_SESSION['lan'] == 'CN')
+                                echo '家族成員進入諸如哈佛、耶魯、斯坦福等常春藤高校，需要長期規劃，
+                                並提早與教授建立良性的互動關係。在高等教育方式的選擇中，
+                                家族成員發現自我天賦與優勢，選擇適合的學術環境與文化氛圍。';
+                            else
+                                echo 'It takes long-term planning and it is better to establish a 
+                                benign interactive relationship with professors in an early stage 
+                                if family members intend to enter Ivy League colleges such as Harvard, 
+                                Yale, Stanford etc. In the choice of higher education, family 
+                                members should aware of their own talents and advantages as 
+                                early as possible and choose a suitable academic environment 
+                                and cultural atmosphere.';
+                            ?>
                         </p>
                     </div>
 
@@ -363,9 +437,13 @@ Le Guardien Family Office 提供獨立的資產管理模式，我們以完全授
 
     <section class="lg-bg-blue">
         <div class="container-fluid">
-            <h1 class="text-lg-right  text-center text-white pt-3 pb-3 pr-lg-5"><?php if($_SESSION['lan'] == 'CN') echo '企業諮詢和後續服務'; else echo ' Enterprise consultation
-                and follow-up services '?>
-
+            <h1 class="text-lg-right  text-center text-white pt-3 pb-3 pr-lg-5">
+                <?php
+                if ($_SESSION['lan'] == 'CN')
+                    echo '企業諮詢及後續服務';
+                else
+                    echo 'Enterprise consultation and follow-up services';
+                ?>
             </h1>
         </div>
     </section>
@@ -378,17 +456,23 @@ Le Guardien Family Office 提供獨立的資產管理模式，我們以完全授
                 </div>
                 <div class="col-lg-8 d-flex justify-content-center align-items-center">
                     <div class="p-lg-5 p-3">
-                        <p><?php if($_SESSION['lan'] == 'CN') echo '我們專業而強大的私人家族辦公室服務顧問團隊可以幫助家族整合各種數據和材料，進行分析和評估，從而了解企業的潛在問題，並應用綜合的改進和問題解決模型。'; else echo ' Our professional and powerful Private Family Office Service consultant teams can help family
-                            to integrate various data / material, analysis and evaluate, then, the potential problems of
-                            the enterprise can be understood, and a comprehensive model of improvement and problem
-                            solving can be applied. '?>
-
-                        </p>
-                        <p><?php if($_SESSION['lan'] == 'CN') echo '旨在實施調整和解決方案，以達到“最佳狀態”的目標，例如提高上市申請的批准機會，節省時間和費用，或提高融資申請的批准機會和降低成本。'; else echo 'Targeting to have "the best state" to implement adjustment and work out, such as increasing
-                            the chance of approval of a listing application, saving time and expense or increasing the
-                            chance of approval of a financing application and cost reduction. '?>
-
-
+                        <p>
+                            <?php
+                            if ($_SESSION['lan'] == 'CN')
+                                echo '我們專業且強大的私人家族辦公室服務顧問團隊可以幫助家族整合各種數據/材料，
+                            進行分析和評估，從而了解企業潛在的問題，並應用全面的改進和解決問題的模型。 
+                            以「最好的狀態」來實施調整和解決，例如增加上市申請獲批准的機會、
+                            節省時間和費用或增加融資申請批准的機會並降低成本。';
+                            else
+                                echo 'Our professional and powerful Private Family Office Service consultant 
+                            teams can help family to integrate various data / material, analysis 
+                            and evaluate, then, the potential problems of the enterprise can be understood, 
+                            and a comprehensive model of improvement and problem solving can be applied. 
+                            Targeting to have "the best state" to implement adjustment and work out, 
+                            such as increasing the chance of approval of a listing application, saving 
+                            time and expense or increasing the chance of approval of a financing 
+                            application and cost reduction.';
+                            ?>
                         </p>
                     </div>
 
@@ -400,7 +484,7 @@ Le Guardien Family Office 提供獨立的資產管理模式，我們以完全授
     <!-- Contact Us Section
     ================================================== -->
 
-    <?php include ('assets/include/news.php');?>
+    <?php include('assets/include/news.php'); ?>
     <!-- /.pa-contact-us -->
 
 
