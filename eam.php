@@ -116,7 +116,7 @@ if (!isset($_SESSION['lan'])) {
             </h1>
         </div>
     </section>
-    <div style="background: #fff;">
+      <div style="background-image: url('assets/images/eam/background.png');background-repeat: no-repeat; background-position: center; background-size: cover">
         <?php if ($_SESSION['lan'] == 'EN') {
             ?>
             <img src="assets/images/eam/eam-en.png" class="img-fluid mt-5"/>

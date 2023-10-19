@@ -14,7 +14,7 @@ html, body {
 @media (max-width: 767px) {
     .lg-slider::before {
         content: "";
-        background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5) as needed */
+        /*background-color: rgba(0, 0, 0, 0.5);  Adjust the opacity (0.5) as needed */
         position: absolute;
         top: 0;
         left: 0;
@@ -61,6 +61,11 @@ html, body {
     }
 }
 
+@media only screen and (max-width: 1024px){
+.lg-slider {
+    background-position: right;
+}
+}
 
 @media only screen and (max-width: 550px) {
     .lg-slide-logo{

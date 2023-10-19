@@ -209,7 +209,7 @@ if (!isset($_SESSION['lan'])) {
                 if ($_SESSION['lan'] == 'CN')
                     echo '家族傳承規劃';
                 else
-                    echo 'Family Heritage Planning'; ?>
+                    echo 'Family Inheritance Planning'; ?>
 
             </h1>
         </div>

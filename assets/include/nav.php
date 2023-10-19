@@ -79,7 +79,7 @@ $currentURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         </li>
 
         <li class="nav-item">
-            <a class="nav-link hvr-underline-from-center" href="#"><?php if($_SESSION['lan'] == 'EN') echo 'Contact us'; else echo '聯絡我們'?></a>
+            <a class="nav-link hvr-underline-from-center" href="our_services.php#contact-us"><?php if($_SESSION['lan'] == 'EN') echo 'Contact us'; else echo '聯絡我們'?></a>
         </li>
         <li class="nav-item menu-item-has-children">
             <a class="nav-link hvr-underline-from-center" href="#"><?php if($_SESSION['lan'] == 'EN') echo 'Language'; else echo '語言'?></a>
