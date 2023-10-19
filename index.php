@@ -33,7 +33,7 @@ if (!isset($_SESSION['lan'])) {
 </video>-->
 
 <section class="lg-slider">
-    <img src="assets/images/home/logo-g.gif" class="img-fluid lg-slide-logo" alt=""/>
+    <img src="assets/images/home/logo-g.gif" class="img-fluid lg-slide-logo" id="logo" style="display: none" alt=""/>
 
 
     <div class="lg-slider-content">
@@ -59,6 +59,21 @@ if (!isset($_SESSION['lan'])) {
 <!-- Vendor Scripts -->
 <?php include('assets/include/js.php'); ?>
 <script src="assets/uikit/js/uikit.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const divElement = document.getElementById('logo');
+
+        setTimeout(function() {
+            if (divElement.style.display === 'none') {
+                divElement.style.display = 'block';
+            } else {
+                divElement.style.display = 'none';
+            }
+        }, 2000);
+    });
+
+</script>
 
 </body>
 

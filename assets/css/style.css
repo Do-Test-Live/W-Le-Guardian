@@ -40,7 +40,7 @@ html, body {
 
     opacity: 0; /* Initially, set the opacity to 0 to make it invisible */
     transform: translateY(20px); /* Initial position, slightly below */
-    animation: fade-in-from-bottom 4s ease forwards; /* Animation definition */
+    animation: fade-in-from-bottom 2s ease forwards; /* Animation definition */
 
 }
 

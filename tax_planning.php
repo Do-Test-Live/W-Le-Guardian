@@ -68,7 +68,7 @@ if (!isset($_SESSION['lan'])) {
 
     <section class="lg-bg-blue">
         <div class="container-fluid">
-            <h1 class="text-center text-white pt-3 pb-3"><?php if ($_SESSION['lan'] == 'CN') echo '我們的服務'; else echo 'Our Services ' ?>
+            <h1 class="text-center text-white pt-3 pb-3"><?php if ($_SESSION['lan'] == 'CN') echo '我們的服務'; else echo 'Global Tax Planning' ?>
 
             </h1>
         </div>
@@ -77,16 +77,9 @@ if (!isset($_SESSION['lan'])) {
     <section
             style="background-image: url('assets/images/new/hero-bg.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
         <div class="container">
-            <?php
-            if ($_SESSION['lan'] == 'CN') {
-                ?>
-                <img src="assets/images/new/hero-cn.png" class="img-fluid mt-5 mb-5" alt=""/>
-                <?php
-            } else {
-                ?>
-                <img src="assets/images/new/hero-en.png" class="img-fluid mt-5 mb-5" alt=""/>
-                <?php
-            } ?>
+
+                <img src="assets/images/Le-Guardien-Subpage_7_oct11.jpg" class="img-fluid mt-5 mb-5" alt=""/>
+
 
         </div>
     </section>
@@ -95,7 +88,7 @@ if (!isset($_SESSION['lan'])) {
     <section class="lg-bg-blue">
         <div class="container-fluid">
             <h1 class="text-lg-right  text-center text-white pt-3 pb-3 pr-lg-5">
-                <?php if ($_SESSION['lan'] == 'CN') echo '家族資產管理'; else echo 'Family Asset Management' ?>
+                <?php if ($_SESSION['lan'] == 'CN') echo '環球稅務規劃'; else echo 'Global Tax Planning' ?>
 
             </h1>
         </div>
@@ -113,86 +106,50 @@ if (!isset($_SESSION['lan'])) {
                         <p>
                             <?php
                             if ($_SESSION['lan'] == 'CN')
-                                echo '嘉兆家族辦公室整合優質的國際化資源，為中國高淨值家庭提供最佳的資產管理服務， 
-                            實現家族財富的保值增值，值得信賴。面對中國高淨值人群，香港的綜合優勢：';
+                                echo '有別於香港的低稅率，任何人在高稅收的國家有資產或展開新生活、安居置業，因不同的收入/財富結構而須繳納當地稅項。
+                                如果在香港和外地同時有收入和資產更可能要繳付雙邊雙重徵稅。當收入累積之財富轉移至下一代時，
+                                更需要面對遺產稅或全球資產徵稅等問題。只要能在離境前在香港正確地建立信託，善用離岸信託進行資產分隔，
+                                就可以享受龐大的稅務優惠﹕可大幅減少入息稅、贈與稅、房產稅等稅收，
+                                亦可避免財富遭到債務和婚姻的風險，有效地管理財富及傳承。';
                             else
-                                echo 'Le Guardien Family Office provides the best asset management services for
-                                        high-net-worth families, so as to actualize the preservation and value
-                                        enhancement of family wealth. It is really very trustworthy. Taking China\'s
-                                        high net-worth population as the serving clients, Hong Kong have the
-                                        following integrative advantages:';
+                                echo 'Unlike Hong Kong\'s low tax rate, individuals who have assets 
+                                or establish a new life and settle in countries with high taxation 
+                                need to pay local taxes based on their different income/wealth structures. 
+                                If there is income and assets in both Hong Kong and abroad, there is a 
+                                higher likelihood of facing double taxation. When accumulated wealth is 
+                                transferred to the next generation, there is a need to address issues 
+                                such as inheritance tax or global asset taxation. By correctly establishing 
+                                trusts in Hong Kong before departure and effectively utilizing offshore trusts 
+                                for asset separation, substantial tax benefits can be enjoyed: significant 
+                                reduction in income tax, gift tax, property tax, etc., as well as protection 
+                                against risks associated with debt and marriage, enabling effective wealth 
+                                management and succession planning.';
                             ?>
-
                         </p>
-                        <ul>
-                            <li>
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                <?php
-                                if ($_SESSION['lan'] == 'CN')
-                                    echo '貨幣穩定';
-                                else
-                                    echo 'High currency stability';
-                                ?>
-                            </li>
-                            <li>
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                <?php
-                                if ($_SESSION['lan'] == 'CN')
-                                    echo '離岸金融，成為世界最大私人財富中心';
-                                else
-                                    echo 'Offshore finance make it becomes the world\'s largest private wealth center';
-                                ?>
-                            </li>
-                            <li>
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                <?php
-                                if ($_SESSION['lan'] == 'CN')
-                                    echo '嚴格的法規、監管環境';
-                                else
-                                    echo 'Strict regulations and regulatory environment';
-                                ?>
-                            </li>
-                            <li>
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                <?php
-                                if ($_SESSION['lan'] == 'CN')
-                                    echo '不受外匯管理，資金自由流通';
-                                else
-                                    echo 'Not subject to foreign exchange management and free circulation of funds';
-                                ?>
-                            </li>
-                            <li>
-                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                <?php
-                                if ($_SESSION['lan'] == 'CN')
-                                    echo '合理規劃稅務，全球稅率最低的發達國家之一';
-                                else
-                                    echo 'Reasonable tax planning, one of lowest tax rate in the world developed region';
-                                ?>
-                            </li>
-                        </ul>
                         <p>
                             <?php
                             if ($_SESSION['lan'] == 'CN')
-                                echo '嘉兆家族辦公室服務提供獨立資產管理模式，以全權委託方式由我們管理及監督您的資產;
-                                為家族及企業量身定制的重點服務內容，實現財富保全，同時通過全球資產配置和綜合統一
-                                管理來降低風險、提升組合投資收益。專業的特許金融分析師(CFA)及投資專家為私人家族辦公室服務團隊，
-                                連同投資策略師及研究分析師作團隊後盾，提供專業及有效支援。為迎客戶合適的風險承受能力及收益目標，
-                                量身定制不同的資產委託組合，掌握環球機遇。';
+                                echo '嘉兆家族辦公室透過多元化完善的專業意見，包括稅務規劃、會計、法律、環球資產配置、信託、保險等，
+                                我們為不同的客人建立一站式溝通及服務平台，以協助有意移民家庭有效地制定理財方案，
+                                為自己及下一代提供更好的生活和保護、滿足移居及傳承需要。';
                             else
-                                echo 'Le Guardien Family Office provides an independent asset 
-                                management model, and we manage and supervise your assets in 
-                                a fully authorize approach. We tailor-made key service content 
-                                for families and enterprises, so as to achieve wealth preservation. 
-                                At the same time, through global asset allocation and integrated 
-                                unified management to reduce risks and enhance portfolio 
-                                investment returns. Professional Chartered Financial Analysts 
-                                (CFA) and investment experts are the back-up of the Private Family 
-                                Office team, together with the investment strategists and research 
-                                analysts, to provide professional and effective support. In order to 
-                                meet the appropriate risk tolerance and return targets of customers, 
-                                we tailor-made different kind of asset commissioned combinations and 
-                                try our best to grasp every global opportunities.';
+                                echo 'At Le Guardien Family Office, we provide comprehensive professional advice 
+                                through diverse and comprehensive services, including tax planning, accounting, 
+                                legal, global asset allocation, trusts, insurance, etc. We establish a one-stop 
+                                communication and service platform for different clients, assisting families 
+                                interested in immigration to effectively develop financial plans and provide 
+                                better lives, protection, and meet the needs of migration and succession for 
+                                themselves and future generations.';
+                            ?>
+                        </p>
+                        <p>
+                            <?php
+                            if ($_SESSION['lan'] == 'CN')
+                                echo '歡迎預約嘉兆家族辦工室的CPA會計專員和環球稅務策劃專家，為您個人和家族作出一個全面的稅務規劃。';
+                            else
+                                echo 'Welcome to make an appointment with our CPA accountants and global 
+                                tax planning experts at Le Guardien Family Office for a comprehensive 
+                                tax planning for you and your family.';
                             ?>
                         </p>
                     </div>

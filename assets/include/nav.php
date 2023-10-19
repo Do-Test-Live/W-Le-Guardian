@@ -3,8 +3,8 @@ $currentURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 ?>
 
 <a class="pa-mobile-main-logo" href="index.php"><img src="<?php if($_SESSION['lan'] == 'EN') echo 'assets/images/en-logo.png'; else echo 'assets/images/cn-logo.png'?>"
-                                             style="max-height: 45px;max-width: 100%;padding-left: 18px;padding-top: 10px"
-                                             alt=""/></a>
+                                             style="padding-left: 18px;padding-top: 10px"
+                                             alt="" class="img-fluid"/></a>
 
 
 <nav id="main-nav" class="pa-menu navbar pa-navbar navbar-expand-lg navbar-dark lg-bg-blue static-top">
@@ -49,7 +49,7 @@ $currentURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         </li>
 
         <li class="nav-item">
-            <a class="nav-link hvr-underline-from-center" href="#"><?php if($_SESSION['lan'] == 'EN') echo 'Global Tax Planning'; else echo '環球稅務規劃'?></a>
+            <a class="nav-link hvr-underline-from-center" href="tax_planning.php"><?php if($_SESSION['lan'] == 'EN') echo 'Global Tax Planning'; else echo '環球稅務規劃'?></a>
         </li>
 
         <li class="nav-item menu-item-has-children">
